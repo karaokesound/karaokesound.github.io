@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BakeBuddy - Polityka Prywatności</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background-color: #9B6C72;
+            background-image: radial-gradient(ellipse at top, #b8838a 0%, #9B6C72 60%);
+            min-height: 100vh;
+            font-family: 'Lato', sans-serif;
+            color: #FDFCF9;
+            padding: 40px 20px 80px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 48px 20px 40px;
+            max-width: 720px;
+            margin: 0 auto 40px;
+        }
+
+        .emoji {
+            font-size: 48px;
+            display: block;
+            margin-bottom: 16px;
+        }
+
+        .header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 42px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 6px;
+        }
+
+        .header .subtitle {
+            font-size: 12px;
+            font-weight: 300;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: rgba(253,252,249,0.55);
+            margin-bottom: 6px;
+        }
+
+        .header .version {
+            font-size: 12px;
+            font-weight: 300;
+            color: rgba(253,252,249,0.45);
+            letter-spacing: 1px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: rgba(253,252,249,0.6);
+            font-size: 13px;
+            font-weight: 300;
+            letter-spacing: 1px;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(253,252,249,0.25);
+            padding-bottom: 2px;
+            transition: color 0.2s, border-color 0.2s;
+        }
+        .back-link:hover {
+            color: rgba(253,252,249,0.9);
+            border-color: rgba(253,252,249,0.6);
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: rgba(253,252,249,0.12);
+            border: 1px solid rgba(253,252,249,0.2);
+            border-radius: 20px;
+            padding: 40px 44px;
+            margin-bottom: 16px;
+        }
+
+        .card h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 20px;
+            font-weight: 700;
+            color: #FDFCF9;
+            margin-bottom: 16px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid rgba(253,252,249,0.15);
+        }
+
+        .card h3 {
+            font-family: 'Lato', sans-serif;
+            font-size: 13px;
+            font-weight: 400;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: rgba(253,252,249,0.65);
+            margin: 20px 0 10px;
+        }
+        .card h3:first-of-type {
+            margin-top: 4px;
+        }
+
+        .card p {
+            font-size: 15px;
+            font-weight: 300;
+            line-height: 1.75;
+            color: rgba(253,252,249,0.82);
+            margin-bottom: 12px;
+        }
+        .card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 12px 0;
+        }
+        .card ul li {
+            font-size: 15px;
+            font-weight: 300;
+            line-height: 1.7;
+            color: rgba(253,252,249,0.82);
+            padding: 4px 0 4px 20px;
+            position: relative;
+        }
+        .card ul li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 13px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: rgba(253,252,249,0.4);
+        }
+
+        .card a {
+            color: rgba(253,252,249,0.9);
+            text-decoration: none;
+            border-bottom: 1px solid rgba(253,252,249,0.35);
+            transition: border-color 0.2s;
+        }
+        .card a:hover {
+            border-color: rgba(253,252,249,0.8);
+        }
+
+        .rights-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+        .right-item {
+            background: rgba(253,252,249,0.08);
+            border-radius: 10px;
+            padding: 12px 16px;
+            font-size: 13px;
+            font-weight: 300;
+            color: rgba(253,252,249,0.8);
+            line-height: 1.5;
+        }
+        .right-item strong {
+            display: block;
+            font-weight: 400;
+            color: rgba(253,252,249,0.95);
+            margin-bottom: 2px;
+            font-size: 13px;
+        }
+
+        .contact-box {
+            background: rgba(253,252,249,0.1);
+            border: 1px solid rgba(253,252,249,0.2);
+            border-radius: 12px;
+            padding: 16px 20px;
+            text-align: center;
+            margin-top: 8px;
+        }
+        .contact-box a {
+            font-size: 15px;
+            font-weight: 400;
+            border-bottom: none !important;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 12px;
+            font-weight: 300;
+            color: rgba(253,252,249,0.35);
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 600px) {
+            .card { padding: 28px 24px; }
+            .rights-grid { grid-template-columns: 1fr; }
+            .header h1 { font-size: 34px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <span class="emoji">🎂</span>
+        <h1>BakeBuddy</h1>
+        <p class="subtitle">Polityka Prywatności</p>
+        <p class="version">Wersja z dnia: 1 kwietnia 2026</p>
+        <a href="/" class="back-link">← powrót do strony głównej</a>
+    </div>
+
+    <div class="container">
+
+        <div class="card">
+            <h2>1. Informacje ogólne</h2>
+            <p>Niniejsza Polityka Prywatności opisuje zasady przetwarzania danych osobowych użytkowników aplikacji mobilnej BakeBuddy.</p>
+            <p>Administratorem danych osobowych jest właściciel aplikacji BakeBuddy.</p>
+            <div class="contact-box">
+                <a href="mailto:service.bakebuddy@gmail.com">service.bakebuddy@gmail.com</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>2. Zakres zbieranych danych</h2>
+            <p>Aplikacja może przetwarzać następujące dane użytkownika:</p>
+            <ul>
+                <li>adres e-mail</li>
+                <li>nazwa użytkownika (username)</li>
+                <li>identyfikator użytkownika (w tym Google ID przy logowaniu przez Google)</li>
+                <li>dane udostępnione przez konto Google (imię, nazwisko, adres e-mail)</li>
+                <li>zdjęcia załączane przez użytkownika do zgłoszeń supportowych</li>
+                <li>dane diagnostyczne (logi błędów, crash data) przechowywane na serwerze Azure</li>
+                <li>dane techniczne (adres IP, logi systemowe)</li>
+            </ul>
+            <p>Podanie danych jest dobrowolne, jednak niezbędne do korzystania z funkcjonalności aplikacji.</p>
+        </div>
+
+        <div class="card">
+            <h2>3. Sposoby zbierania danych</h2>
+
+            <h3>a) Rejestracja w aplikacji</h3>
+            <p>Podczas rejestracji użytkownik podaje adres e-mail, nazwę użytkownika oraz hasło. Hasło jest przechowywane wyłącznie w formie zaszyfrowanej (hash).</p>
+
+            <h3>b) Logowanie przez Google</h3>
+            <p>Aplikacja umożliwia logowanie za pomocą Google Sign-In. W takim przypadku aplikacja otrzymuje dane użytkownika z konta Google (imię, nazwisko, adres e-mail, Google ID) zgodnie z ustawieniami prywatności użytkownika. Podstawą przetwarzania jest wykonanie umowy (art. 6 ust. 1 lit. b RODO) oraz zgoda użytkownika.</p>
+
+            <h3>c) Formularz zgłoszenia problemu</h3>
+            <p>Użytkownik może przekazać dodatkowe informacje podczas zgłaszania problemów za pośrednictwem formularza w aplikacji. Opcjonalnie użytkownik może załączyć zdjęcie do zgłoszenia. Zdjęcia są przechowywane wyłącznie przez czas niezbędny do obsługi zgłoszenia, a następnie usuwane.</p>
+
+            <h3>d) Logi błędów i diagnostyka</h3>
+            <p>Aplikacja rejestruje logi błędów i crash data w celu zapewnienia stabilności i poprawy działania aplikacji. Dane te są przesyłane i przechowywane na serwerze Microsoft Azure. Logi mogą zawierać identyfikator użytkownika, jednak nie zawierają danych wrażliwych.</p>
+        </div>
+
+        <div class="card">
+            <h2>4. Cel i podstawy prawne przetwarzania</h2>
+            <ul>
+                <li>umożliwienie rejestracji i logowania użytkownika – wykonanie umowy (art. 6 ust. 1 lit. b RODO)</li>
+                <li>obsługa konta użytkownika – wykonanie umowy (art. 6 ust. 1 lit. b RODO)</li>
+                <li>obsługa zgłoszeń i komunikacja z użytkownikiem – wykonanie umowy (art. 6 ust. 1 lit. b RODO)</li>
+                <li>bezpieczeństwo aplikacji, utrzymanie i poprawa działania systemu, przetwarzanie logów błędów – prawnie uzasadniony interes administratora (art. 6 ust. 1 lit. f RODO)</li>
+            </ul>
+            <p>Dane użytkowników nie są wykorzystywane do zautomatyzowanego podejmowania decyzji ani profilowania.</p>
+        </div>
+
+        <div class="card">
+            <h2>5. Wysyłka wiadomości e-mail</h2>
+            <p>Aplikacja wysyła wiadomości e-mail wyłącznie w następujących przypadkach:</p>
+            <ul>
+                <li>wysyłka kodu rejestracyjnego</li>
+                <li>potwierdzenie zgłoszenia problemu</li>
+            </ul>
+            <p>Wiadomości są wysyłane za pośrednictwem infrastruktury Google (Gmail SMTP).</p>
+        </div>
+
+        <div class="card">
+            <h2>6. Przechowywanie danych</h2>
+            <ul>
+                <li>dane konta (e-mail, username, identyfikator) – przez okres istnienia konta użytkownika</li>
+                <li>zdjęcia załączone do zgłoszeń supportowych – wyłącznie przez czas obsługi zgłoszenia, następnie usuwane</li>
+                <li>dane diagnostyczne (logi błędów, crash data) – przez okres do 30 dni</li>
+                <li>dane techniczne (logi systemowe, adres IP) – przez okres do 30 dni od usunięcia konta</li>
+            </ul>
+            <p>Po usunięciu konta dane użytkownika są usuwane lub anonimizowane zgodnie z powyższymi zasadami.</p>
+        </div>
+
+        <div class="card">
+            <h2>7. Bezpieczeństwo danych</h2>
+            <ul>
+                <li>szyfrowanie haseł (hashowanie)</li>
+                <li>zabezpieczenia serwera i komunikacji (HTTPS/TLS)</li>
+                <li>mechanizmy autoryzacji oparte o tokeny (ważne przez określony czas)</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>8. Pliki cookies i technologie podobne</h2>
+            <p>Aplikacja mobilna nie wykorzystuje plików cookies. Może natomiast korzystać z mechanizmów sesyjnych oraz tokenów uwierzytelniających w celu utrzymania sesji użytkownika i zapewnienia poprawnego działania logowania.</p>
+        </div>
+
+        <div class="card">
+            <h2>9. Przekazywanie danych do państw trzecich</h2>
+            <p>Dane użytkowników mogą być przekazywane do państw spoza EOG, w szczególności do Stanów Zjednoczonych, za pośrednictwem:</p>
+            <ul>
+                <li>Google LLC – w związku z usługą Google Sign-In oraz wysyłką e-maili przez Gmail SMTP</li>
+                <li>Microsoft Corporation – w związku z usługą Azure (hosting backendu, przechowywanie danych i logów błędów)</li>
+            </ul>
+            <p>Przekazywanie danych odbywa się na podstawie standardowych klauzul umownych zatwierdzonych przez Komisję Europejską.</p>
+            <p>Więcej informacji: <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a> · <a href="https://privacy.microsoft.com" target="_blank">Microsoft Privacy</a></p>
+        </div>
+
+        <div class="card">
+            <h2>10. Udostępnianie danych</h2>
+            <p>Dane są przekazywane podmiotom trzecim wyłącznie w zakresie niezbędnym do działania aplikacji:</p>
+            <ul>
+                <li>Google LLC (logowanie i wysyłka e-maili)</li>
+                <li>Microsoft Corporation (infrastruktura chmurowa Azure – hosting i diagnostyka)</li>
+            </ul>
+            <p>Dane nie są sprzedawane ani udostępniane w celach marketingowych.</p>
+        </div>
+
+        <div class="card">
+            <h2>11. Prawa użytkownika</h2>
+            <p>Zgodnie z RODO użytkownik ma prawo do:</p>
+            <div class="rights-grid">
+                <div class="right-item"><strong>Art. 15 RODO</strong>dostępu do swoich danych</div>
+                <div class="right-item"><strong>Art. 16 RODO</strong>sprostowania danych</div>
+                <div class="right-item"><strong>Art. 17 RODO</strong>usunięcia danych</div>
+                <div class="right-item"><strong>Art. 18 RODO</strong>ograniczenia przetwarzania</div>
+                <div class="right-item"><strong>Art. 20 RODO</strong>przenoszenia danych</div>
+                <div class="right-item"><strong>Art. 21 RODO</strong>wniesienia sprzeciwu</div>
+            </div>
+            <p>W celu realizacji praw skontaktuj się z administratorem:</p>
+            <div class="contact-box">
+                <a href="mailto:service.bakebuddy@gmail.com">service.bakebuddy@gmail.com</a>
+            </div>
+            <p style="margin-top:16px;">Przysługuje Ci również prawo do wniesienia skargi do Prezesa Urzędu Ochrony Danych Osobowych (UODO), ul. Stawki 2, 00-193 Warszawa, <a href="mailto:kancelaria@uodo.gov.pl">kancelaria@uodo.gov.pl</a>.</p>
+        </div>
+
+        <div class="card">
+            <h2>12. Usunięcie konta</h2>
+            <p>Użytkownik może w każdej chwili usunąć swoje konto bezpośrednio z poziomu aplikacji (w ustawieniach konta). Usunięcie konta skutkuje trwałym usunięciem danych osobowych zgodnie z zasadami opisanymi w pkt. 6.</p>
+            <p>W przypadku trudności skontaktuj się z administratorem: <a href="mailto:service.bakebuddy@gmail.com">service.bakebuddy@gmail.com</a></p>
+        </div>
+
+        <div class="card">
+            <h2>13. Dzieci</h2>
+            <p>Aplikacja nie jest przeznaczona dla dzieci poniżej 13. roku życia i administrator świadomie nie zbiera danych osobowych takich osób. Jeśli administrator dowie się, że dane dziecka poniżej 13. roku życia zostały zebrane bez weryfikowalnej zgody rodzica lub opiekuna, zostaną one niezwłocznie usunięte.</p>
+        </div>
+
+        <div class="card">
+            <h2>14. Zmiany polityki prywatności</h2>
+            <p>Polityka prywatności może być aktualizowana w miarę potrzeb. O wszelkich istotnych zmianach użytkownicy zostaną poinformowani w aplikacji lub pocztą e-mail. Aktualna wersja polityki jest zawsze dostępna pod adresem:</p>
+            <div class="contact-box" style="margin-top:12px;">
+                <a href="https://karaokesound.github.io/privacy" target="_blank">https://karaokesound.github.io/privacy</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>Data ostatniej aktualizacji: 1 kwietnia 2026</p>
+    </div>
+</body>
+</html>
