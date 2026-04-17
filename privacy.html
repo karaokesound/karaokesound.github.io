@@ -231,7 +231,7 @@
             <ul>
                 <li>email address</li>
                 <li>username</li>
-                <li>user identifier (including Google ID when signing in via Google)</li>
+                <li>user identifier (including Google ID when signing in via Google and Apple ID when signing in via Apple)</li>
                 <li>data shared via Google account (first name, last name, email address)</li>
                 <li>photos attached by the user to support requests</li>
                 <li>diagnostic data (error logs, crash data) stored on Azure server</li>
@@ -249,10 +249,13 @@
             <h3>b) Google Sign-In</h3>
             <p>The application allows login via Google Sign-In. In this case, the application receives user data from the Google account (first name, last name, email address, Google ID) in accordance with the user's privacy settings. The legal basis for processing is the performance of a contract (Art. 6(1)(b) GDPR) and the user's consent.</p>
 
-            <h3>c) Issue report form</h3>
+            <h3>c) Sign in with Apple</h3>
+            <p>The application allows login via Sign in with Apple. In this case, the application receives the user's Apple ID and, optionally, their name and email address. The user may choose to hide their real email address, in which case Apple provides a private relay address. Data is processed in accordance with Apple's privacy settings. The legal basis for processing is the performance of a contract (Art. 6(1)(b) GDPR) and the user's consent.</p>
+            
+            <h3>d) Issue report form</h3>
             <p>The user may provide additional information when reporting problems via the in-app form. Optionally, the user may attach a photo to the report. Photos are stored only for the time necessary to handle the report and are then deleted.</p>
 
-            <h3>d) Error logs and diagnostics</h3>
+            <h3>e) Error logs and diagnostics</h3>
             <p>The application records error logs and crash data to ensure stability and improve application performance. This data is transmitted to and stored on Microsoft Azure servers. Logs may contain a user identifier but do not contain sensitive data.</p>
         </div>
 
@@ -308,6 +311,7 @@
             <ul>
                 <li>Google LLC – in connection with Google Sign-In and email delivery via Gmail SMTP</li>
                 <li>Microsoft Corporation – in connection with Azure services (backend hosting, data storage, and error log storage)</li>
+                <li>Apple Inc. – in connection with Sign in with Apple</li>
             </ul>
             <p>Data transfers are carried out on the basis of standard contractual clauses approved by the European Commission.</p>
             <p>More information: <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a> · <a href="https://privacy.microsoft.com" target="_blank">Microsoft Privacy</a></p>
@@ -319,6 +323,7 @@
             <ul>
                 <li>Google LLC (login and email delivery)</li>
                 <li>Microsoft Corporation (Azure cloud infrastructure – hosting and diagnostics)</li>
+                <li>Apple Inc. (Sign in with Apple authentication)</li>
             </ul>
             <p>Data is not sold or shared for marketing purposes.</p>
         </div>
