@@ -48,6 +48,7 @@
             border: 1px solid rgba(253,252,249,0.25);
             border-radius: 16px;
             padding: 32px;
+            margin-bottom: 12px;
         }
         .card p {
             font-size: 15px;
@@ -56,7 +57,7 @@
             margin-bottom: 20px;
             line-height: 1.6;
         }
-        .card a {
+        .card a.btn {
             display: inline-block;
             background: #FDFCF9;
             color: #9B6C72;
@@ -66,9 +67,48 @@
             font-size: 14px;
             font-weight: 400;
             letter-spacing: 1px;
+            transition: background 0.2s;
         }
-        .card a:hover {
+        .card a.btn:hover {
             background: rgba(253,252,249,0.85);
+        }
+        .card a.btn-outline {
+            display: inline-block;
+            background: transparent;
+            color: rgba(253,252,249,0.8);
+            text-decoration: none;
+            padding: 12px 32px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 300;
+            letter-spacing: 1px;
+            border: 1px solid rgba(253,252,249,0.3);
+            transition: border-color 0.2s, color 0.2s;
+        }
+        .card a.btn-outline:hover {
+            border-color: rgba(253,252,249,0.7);
+            color: #FDFCF9;
+        }
+        .footer-links {
+            margin-top: 24px;
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+        }
+        .footer-links a {
+            font-size: 12px;
+            font-weight: 300;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: rgba(253,252,249,0.4);
+            text-decoration: none;
+            border-bottom: 1px solid rgba(253,252,249,0.2);
+            padding-bottom: 2px;
+            transition: color 0.2s, border-color 0.2s;
+        }
+        .footer-links a:hover {
+            color: rgba(253,252,249,0.7);
+            border-color: rgba(253,252,249,0.4);
         }
     </style>
 </head>
@@ -77,13 +117,20 @@
         <span class="emoji">🎂</span>
         <h1>BakeBuddy</h1>
         <p class="tagline">Support</p>
+
         <div class="card">
             <p>Masz pytanie lub napotkałeś problem?<br>Napisz do nas — postaramy się pomóc.</p>
-            <a href="mailto:service.bakebuddy@gmail.com">service.bakebuddy@gmail.com</a>
+            <a href="mailto:service.bakebuddy@gmail.com" class="btn">service.bakebuddy@gmail.com</a>
         </div>
-        <p style="margin-top:24px;">
-            <a href="/privacy" style="font-size:12px; font-weight:300; letter-spacing:2px; text-transform:uppercase; color:rgba(253,252,249,0.4); text-decoration:none; border-bottom:1px solid rgba(253,252,249,0.2); padding-bottom:2px; background:transparent; border-radius:0; padding-left:0; padding-right:0;">Polityka Prywatności</a>
-        </p>
+
+        <div class="card">
+            <p>Chcesz usunąć swoje konto<br>i powiązane dane?</p>
+            <a href="/delete-account" class="btn-outline">Usuń konto</a>
+        </div>
+
+        <div class="footer-links">
+            <a href="/privacy">Polityka Prywatności</a>
+        </div>
     </div>
 </body>
 </html>
