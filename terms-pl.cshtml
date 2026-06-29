@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BakeBuddy - Regulamin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background-color: #9B6C72;
+            background-image: radial-gradient(ellipse at top, #b8838a 0%, #9B6C72 60%);
+            min-height: 100vh;
+            font-family: 'Lato', sans-serif;
+            color: #FDFCF9;
+            padding: 40px 20px 80px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 48px 20px 40px;
+            max-width: 720px;
+            margin: 0 auto 40px;
+        }
+
+        .emoji {
+            font-size: 48px;
+            display: block;
+            margin-bottom: 16px;
+        }
+
+        .header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 42px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 6px;
+        }
+
+        .header .subtitle {
+            font-size: 12px;
+            font-weight: 300;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: rgba(253,252,249,0.55);
+            margin-bottom: 6px;
+        }
+
+        .header .version {
+            font-size: 12px;
+            font-weight: 300;
+            color: rgba(253,252,249,0.45);
+            letter-spacing: 1px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: rgba(253,252,249,0.6);
+            font-size: 13px;
+            font-weight: 300;
+            letter-spacing: 1px;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(253,252,249,0.25);
+            padding-bottom: 2px;
+            transition: color 0.2s, border-color 0.2s;
+        }
+        .back-link:hover {
+            color: rgba(253,252,249,0.9);
+            border-color: rgba(253,252,249,0.6);
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: rgba(253,252,249,0.12);
+            border: 1px solid rgba(253,252,249,0.2);
+            border-radius: 20px;
+            padding: 40px 44px;
+            margin-bottom: 16px;
+        }
+
+        .card h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 20px;
+            font-weight: 700;
+            color: #FDFCF9;
+            margin-bottom: 16px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid rgba(253,252,249,0.15);
+        }
+
+        .card p {
+            font-size: 15px;
+            font-weight: 300;
+            line-height: 1.75;
+            color: rgba(253,252,249,0.82);
+            margin-bottom: 12px;
+        }
+        .card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 12px 0;
+        }
+        .card ul li {
+            font-size: 15px;
+            font-weight: 300;
+            line-height: 1.7;
+            color: rgba(253,252,249,0.82);
+            padding: 4px 0 4px 20px;
+            position: relative;
+        }
+        .card ul li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 13px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: rgba(253,252,249,0.4);
+        }
+
+        .card a {
+            color: rgba(253,252,249,0.9);
+            text-decoration: none;
+            border-bottom: 1px solid rgba(253,252,249,0.35);
+            transition: border-color 0.2s;
+        }
+        .card a:hover {
+            border-color: rgba(253,252,249,0.8);
+        }
+
+        .contact-box {
+            background: rgba(253,252,249,0.1);
+            border: 1px solid rgba(253,252,249,0.2);
+            border-radius: 12px;
+            padding: 16px 20px;
+            text-align: center;
+            margin-top: 8px;
+        }
+        .contact-box a {
+            font-size: 15px;
+            font-weight: 400;
+            border-bottom: none !important;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 12px;
+            font-weight: 300;
+            color: rgba(253,252,249,0.35);
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 600px) {
+            .card { padding: 28px 24px; }
+            .header h1 { font-size: 34px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <span class="emoji">🎂</span>
+        <h1>BakeBuddy</h1>
+        <p class="subtitle">Regulamin</p>
+        <p class="version">Data wersji: 24 czerwca 2026</p>
+        <a href="/" class="back-link">← wróć do strony głównej</a>
+    </div>
+
+    <div class="container">
+
+        <div class="card">
+            <h2>1. Informacje ogólne</h2>
+            <p>Niniejszy Regulamin określa zasady korzystania z aplikacji mobilnej BakeBuddy dostępnej w Google Play i App Store. Pobierając, instalując lub korzystając z aplikacji, akceptujesz niniejsze warunki.</p>
+            <p>Aplikacja jest prowadzona przez właściciela BakeBuddy. W przypadku pytań prosimy o kontakt:</p>
+            <div class="contact-box">
+                <a href="mailto:service.bakebuddy@gmail.com">service.bakebuddy@gmail.com</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>2. Wymagania wiekowe</h2>
+            <p>Aby korzystać z BakeBuddy, musisz mieć ukończone 13 lat. Korzystając z aplikacji, potwierdzasz, że spełniasz ten wymóg. Jeśli nie ukończyłeś 18 lat, możesz korzystać z aplikacji wyłącznie przy udziale rodzica lub opiekuna prawnego.</p>
+        </div>
+
+        <div class="card">
+            <h2>3. Konto użytkownika</h2>
+            <p>Aby uzyskać dostęp do niektórych funkcji, musisz założyć konto. Jesteś odpowiedzialny za zachowanie poufności swoich danych logowania oraz za wszelką aktywność mającą miejsce na Twoim koncie.</p>
+            <p>Zobowiązujesz się do podania dokładnych i aktualnych informacji podczas rejestracji oraz do niezwłocznego powiadamiania nas o nieautoryzowanym użyciu Twojego konta.</p>
+            <p>Zastrzegamy sobie prawo do zawieszenia lub usunięcia kont naruszających niniejszy Regulamin.</p>
+        </div>
+
+        <div class="card">
+            <h2>4. Dozwolone korzystanie</h2>
+            <p>BakeBuddy jest przeznaczony do użytku osobistego, niekomercyjnego. Zobowiązujesz się nie:</p>
+            <ul>
+                <li>korzystać z aplikacji w celach niezgodnych z prawem</li>
+                <li>podejmować prób inżynierii wstecznej, dekompilacji lub modyfikacji aplikacji</li>
+                <li>przesyłać treści szkodliwych, obraźliwych lub naruszających prawa osób trzecich</li>
+                <li>używać zautomatyzowanych narzędzi do uzyskiwania dostępu do aplikacji lub pobierania jej zawartości</li>
+                <li>udostępniać swoich danych logowania innym osobom</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>5. Subskrypcja premium</h2>
+            <p>BakeBuddy oferuje opcjonalną subskrypcję premium odblokowującą dodatkowe funkcje. Subskrypcja dostępna jest w wariancie miesięcznym lub rocznym i można ją zakupić przez Google Play lub App Store.</p>
+            <p>Dokonując zakupu subskrypcji, akceptujesz warunki płatności obowiązujące w danym sklepie. Wszelkie kwestie rozliczeniowe, odnowienia i anulowania są obsługiwane bezpośrednio przez Google LLC lub Apple Inc. — administrator aplikacji nie przetwarza danych płatniczych.</p>
+            <p>Subskrypcje odnawiają się automatycznie, chyba że zostaną anulowane co najmniej 24 godziny przed końcem bieżącego okresu rozliczeniowego. Subskrypcją możesz zarządzać lub ją anulować w dowolnym momencie w ustawieniach konta Google Play lub App Store.</p>
+            <p>Zwroty podlegają polityce zwrotów odpowiednio Google Play lub App Store. Administrator aplikacji nie dokonuje zwrotów bezpośrednio.</p>
+        </div>
+
+        <div class="card">
+            <h2>6. Treści użytkownika</h2>
+            <p>Zachowujesz własność wszelkich treści tworzonych w aplikacji, takich jak przepisy czy notatki. Korzystając z aplikacji, udzielasz nam ograniczonej licencji na przechowywanie i wyświetlanie Twoich treści wyłącznie w celu świadczenia usługi.</p>
+            <p>Ponosisz wyłączną odpowiedzialność za tworzone przez siebie treści i musisz zapewnić, że nie naruszają one praw osób trzecich.</p>
+        </div>
+
+        <div class="card">
+            <h2>7. Własność intelektualna</h2>
+            <p>Wszelkie prawa własności intelektualnej do BakeBuddy — w tym do aplikacji, jej projektu, kodu i treści — należą do właściciela BakeBuddy. Nie możesz kopiować, rozpowszechniać ani tworzyć dzieł pochodnych bez uprzedniej pisemnej zgody.</p>
+        </div>
+
+        <div class="card">
+            <h2>8. Wyłączenie gwarancji</h2>
+            <p>BakeBuddy jest udostępniany w stanie „takim, jaki jest", bez jakichkolwiek gwarancji. Nie gwarantujemy, że aplikacja będzie wolna od błędów, działać bez przerw ani że wyniki uzyskane z jej użytkowania (takie jak przepisy czy obliczenia) będą dokładne lub odpowiednie do jakiegokolwiek konkretnego celu.</p>
+            <p>Korzystanie z przepisów, kalkulatora składników i przelicznika rozmiarów ciast odbywa się na własne uznanie i ryzyko użytkownika.</p>
+        </div>
+
+        <div class="card">
+            <h2>9. Ograniczenie odpowiedzialności</h2>
+            <p>W najszerszym zakresie dozwolonym przez obowiązujące prawo właściciel BakeBuddy nie ponosi odpowiedzialności za jakiekolwiek pośrednie, przypadkowe lub wynikowe szkody powstałe w związku z korzystaniem z aplikacji lub niemożnością jej użytkowania, w tym za utratę danych lub przerwę w świadczeniu usługi.</p>
+        </div>
+
+        <div class="card">
+            <h2>10. Usuwanie konta</h2>
+            <p>Możesz usunąć swoje konto w dowolnym momencie bezpośrednio z poziomu aplikacji (w ustawieniach konta). Usunięcie konta skutkuje trwałym usunięciem danych osobowych zgodnie z naszą Polityką Prywatności.</p>
+            <p>Usunięcie konta nie powoduje automatycznego anulowania aktywnej subskrypcji — należy ją anulować oddzielnie w ustawieniach konta Google Play lub App Store przed usunięciem konta.</p>
+        </div>
+
+        <div class="card">
+            <h2>11. Zmiany Regulaminu</h2>
+            <p>Niniejszy Regulamin może być od czasu do czasu aktualizowany. O istotnych zmianach użytkownicy będą informowani w aplikacji lub drogą e-mail. Dalsze korzystanie z aplikacji po wejściu w życie zmian oznacza akceptację zaktualizowanych warunków.</p>
+            <p>Aktualna wersja Regulaminu jest zawsze dostępna pod adresem:</p>
+            <div class="contact-box" style="margin-top:12px;">
+                <a href="https://karaokesound.github.io/terms" target="_blank">https://karaokesound.github.io/terms</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>12. Prawo właściwe</h2>
+            <p>Niniejszy Regulamin podlega prawu polskiemu. Wszelkie spory wynikające z korzystania z aplikacji podlegają jurysdykcji właściwych sądów polskich, chyba że bezwzględnie obowiązujące przepisy o ochronie konsumentów w kraju Twojego zamieszkania stanowią inaczej.</p>
+        </div>
+
+        <div class="card">
+            <h2>13. Kontakt</h2>
+            <p>W przypadku pytań dotyczących niniejszego Regulaminu prosimy o kontakt:</p>
+            <div class="contact-box">
+                <a href="mailto:service.bakebuddy@gmail.com">service.bakebuddy@gmail.com</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>Ostatnia aktualizacja: 24 czerwca 2026</p>
+    </div>
+</body>
+</html>
