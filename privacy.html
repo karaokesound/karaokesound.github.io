@@ -210,7 +210,7 @@
         <span class="emoji">🎂</span>
         <h1>BakeBuddy</h1>
         <p class="subtitle">Privacy Policy</p>
-        <p class="version">Version date: June 24, 2026</p>
+        <p class="version">Version date: October 27, 2026</p>
         <a href="/" class="back-link">← back to home page</a>
     </div>
 
@@ -234,9 +234,11 @@
                 <li>user identifier (including Google ID when signing in via Google and Apple ID when signing in via Apple)</li>
                 <li>data shared via Google account (first name, last name, email address)</li>
                 <li>photos attached by the user to support requests</li>
-                <li>diagnostic data (error logs, crash data) stored on Azure server</li>
+                <li>diagnostic data (error logs, crash data) stored on Microsoft Azure and Sentry servers</li>
                 <li>technical data (IP address, system logs)</li>
                 <li>subscription status and purchase history</li>
+                <li>device advertising identifier (IDFA on iOS, Google Advertising ID on Android)</li>
+                <li>app usage events (app launch, account registration including the registration method, start of a free trial, subscription purchase including amount and currency)</li>
             </ul>
             <p>Providing data is voluntary, but necessary to use the application's features.</p>
         </div>
@@ -252,15 +254,21 @@
 
             <h3>c) Sign in with Apple</h3>
             <p>The application allows login via Sign in with Apple. In this case, the application receives the user's Apple ID and, optionally, their name and email address. The user may choose to hide their real email address, in which case Apple provides a private relay address. Data is processed in accordance with Apple's privacy settings. The legal basis for processing is the performance of a contract (Art. 6(1)(b) GDPR) and the user's consent.</p>
-            
+
             <h3>d) Issue report form</h3>
             <p>The user may provide additional information when reporting problems via the in-app form. Optionally, the user may attach a photo to the report. Photos are stored only for the time necessary to handle the report and are then deleted.</p>
 
             <h3>e) Error logs and diagnostics</h3>
-            <p>The application records error logs and crash data to ensure stability and improve application performance. This data is transmitted to and stored on Microsoft Azure servers. Logs may contain a user identifier but do not contain sensitive data.</p>
-        
+            <p>The application records error logs and crash data to ensure stability and improve application performance. This data is transmitted to and stored on Microsoft Azure servers and in Sentry (Functional Software, Inc.), with Sentry data stored in the European Union (Germany). Logs may contain a user identifier but do not contain sensitive data.</p>
+
             <h3>f) In-app purchases</h3>
             <p>The application offers a premium subscription available for purchase via Google Play and the App Store. Purchases are handled by the respective store (Google LLC or Apple Inc.) and RevenueCat Inc., which processes subscription status data. The application receives information about active entitlements and subscription expiration date. Payment data (card numbers etc.) is processed exclusively by Google or Apple and is not accessible to the application administrator.</p>
+
+            <h3>g) Advertising measurement (Meta)</h3>
+            <p>The application uses the Facebook SDK provided by Meta Platforms Ireland Ltd. We share with Meta the device advertising identifier (IDFA on iOS, Google Advertising ID on Android) and the app usage events listed in section 2 (app launch, account registration, start of a free trial, subscription purchase). This data is used to measure the effectiveness of BakeBuddy advertising campaigns on Facebook and Instagram and to display personalized ads. We do not share your email address, name or account identifier with Meta.</p>
+            <p><strong>iOS:</strong> data is shared with Meta only after you grant permission in the system "Allow Tracking" prompt. You can withdraw your consent at any time in Settings → Privacy &amp; Security → Tracking.</p>
+            <p><strong>Android:</strong> you can delete or reset your advertising identifier at any time in Settings → Google → Ads (or Settings → Privacy → Ads, depending on the device). You may also object to this processing by contacting us at <a href="mailto:service.bakebuddy@gmail.com">service.bakebuddy@gmail.com</a>.</p>
+            <p>More information on how Meta processes data: <a href="https://www.facebook.com/privacy/policy" target="_blank">Meta Privacy Policy</a></p>
         </div>
 
         <div class="card">
@@ -271,8 +279,9 @@
                 <li>handling support requests and communicating with the user – performance of a contract (Art. 6(1)(b) GDPR)</li>
                 <li>application security, system maintenance and improvement, error log processing – legitimate interests of the administrator (Art. 6(1)(f) GDPR)</li>
                 <li>processing in-app purchases and managing subscription status – performance of a contract (Art. 6(1)(b) GDPR)</li>
+                <li>measuring the effectiveness of advertising campaigns and personalized ads (Meta) – on iOS: the user's consent (Art. 6(1)(a) GDPR); on Android: legitimate interests of the administrator consisting in promoting the application and evaluating the effectiveness of marketing activities (Art. 6(1)(f) GDPR), with the right to object (Art. 21 GDPR)</li>
             </ul>
-            <p>User data is not used for automated decision-making or profiling.</p>
+            <p>User data is not used for automated decision-making that produces legal effects concerning the user. Meta may use the data shared with it for profiling for advertising purposes, in accordance with its own privacy policy.</p>
         </div>
 
         <div class="card">
@@ -292,6 +301,7 @@
                 <li>photos attached to support requests – only for the time needed to handle the request, then deleted</li>
                 <li>diagnostic data (error logs, crash data) – for up to 30 days</li>
                 <li>technical data (system logs, IP address) – for up to 30 days after account deletion</li>
+                <li>data shared with Meta (advertising identifier, app usage events) – in accordance with the <a href="https://www.facebook.com/privacy/policy" target="_blank">Meta Privacy Policy</a></li>
             </ul>
             <p>After account deletion, user data is deleted or anonymized in accordance with the above rules.</p>
         </div>
@@ -308,6 +318,7 @@
         <div class="card">
             <h2>8. Cookies and Similar Technologies</h2>
             <p>The mobile application does not use cookies. It may use session mechanisms and authentication tokens to maintain the user session and ensure proper login functionality.</p>
+            <p>The application uses the device advertising identifier for advertising measurement, as described in section 3(g).</p>
         </div>
 
         <div class="card">
@@ -318,21 +329,25 @@
                 <li>Microsoft Corporation – in connection with Azure services (backend hosting, data storage, and error log storage)</li>
                 <li>Apple Inc. – in connection with Sign in with Apple</li>
                 <li>RevenueCat Inc. – in connection with subscription and purchase management</li>
+                <li>Meta Platforms, Inc. – in connection with advertising measurement (data is shared with Meta Platforms Ireland Ltd., which may transfer it to Meta Platforms, Inc.)</li>
+                <li>Functional Software, Inc. (Sentry) – in connection with error and crash reporting (data is stored in the EU, but the provider is based in the United States)</li>
             </ul>
-            <p>Data transfers are carried out on the basis of standard contractual clauses approved by the European Commission.</p>
-            <p>More information: <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a> · <a href="https://privacy.microsoft.com" target="_blank">Microsoft Privacy</a></p>
+            <p>Data transfers are carried out on the basis of standard contractual clauses approved by the European Commission or the EU-U.S. Data Privacy Framework.</p>
+            <p>More information: <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a> · <a href="https://privacy.microsoft.com" target="_blank">Microsoft Privacy</a> · <a href="https://www.facebook.com/privacy/policy" target="_blank">Meta Privacy Policy</a> · <a href="https://sentry.io/privacy/" target="_blank">Sentry Privacy Policy</a></p>
         </div>
 
         <div class="card">
             <h2>10. Sharing of Data</h2>
-            <p>Data is shared with third parties only to the extent necessary for the application to function:</p>
+            <p>Data is shared with third parties only to the extent described in this policy:</p>
             <ul>
                 <li>Google LLC (login and email delivery)</li>
                 <li>Microsoft Corporation (Azure cloud infrastructure – hosting and diagnostics)</li>
                 <li>Apple Inc. (Sign in with Apple authentication)</li>
                 <li>RevenueCat Inc. (subscription status management)</li>
+                <li>Meta Platforms Ireland Ltd. (advertising measurement – see section 3(g))</li>
+                <li>Functional Software, Inc. – Sentry (error and crash reporting)</li>
             </ul>
-            <p>Data is not sold or shared for marketing purposes.</p>
+            <p>Data is not sold. Data is shared for marketing purposes only with Meta, to the extent described in section 3(g).</p>
         </div>
 
         <div class="card">
@@ -346,6 +361,7 @@
                 <div class="right-item"><strong>Art. 20 GDPR</strong>data portability</div>
                 <div class="right-item"><strong>Art. 21 GDPR</strong>objection to processing</div>
             </div>
+            <p>Where processing is based on consent, the user may withdraw it at any time, without affecting the lawfulness of processing carried out before its withdrawal.</p>
             <p>To exercise your rights, please contact the administrator:</p>
             <div class="contact-box">
                 <a href="mailto:service.bakebuddy@gmail.com">service.bakebuddy@gmail.com</a>
@@ -375,7 +391,7 @@
     </div>
 
     <div class="footer">
-        <p>Last updated: June 24, 2026</p>
+        <p>Last updated: October 27, 2026</p>
     </div>
 </body>
 </html>
