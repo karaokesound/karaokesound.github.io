@@ -210,7 +210,7 @@
         <span class="emoji">🎂</span>
         <h1>BakeBuddy</h1>
         <p class="subtitle">Polityka Prywatności</p>
-        <p class="version">Data wersji: 24 czerwca 2026</p>
+        <p class="version">Data wersji: 27 października 2026</p>
         <a href="/" class="back-link">← wróć do strony głównej</a>
     </div>
 
@@ -234,9 +234,11 @@
                 <li>identyfikator użytkownika (w tym Google ID przy logowaniu przez Google oraz Apple ID przy logowaniu przez Apple)</li>
                 <li>dane udostępnione poprzez konto Google (imię, nazwisko, adres e-mail)</li>
                 <li>zdjęcia dołączone przez użytkownika do zgłoszeń pomocy technicznej</li>
-                <li>dane diagnostyczne (logi błędów, dane o awariach) przechowywane na serwerze Azure</li>
+                <li>dane diagnostyczne (logi błędów, dane o awariach) przechowywane na serwerach Microsoft Azure i Sentry</li>
                 <li>dane techniczne (adres IP, logi systemowe)</li>
                 <li>status subskrypcji i historia zakupów</li>
+                <li>identyfikator reklamowy urządzenia (IDFA na iOS, Google Advertising ID na Androidzie)</li>
+                <li>zdarzenia związane z korzystaniem z aplikacji (uruchomienie aplikacji, rejestracja konta wraz z metodą rejestracji, rozpoczęcie okresu próbnego, zakup subskrypcji wraz z kwotą i walutą)</li>
             </ul>
             <p>Podanie danych jest dobrowolne, jednak niezbędne do korzystania z funkcji aplikacji.</p>
         </div>
@@ -257,10 +259,16 @@
             <p>Użytkownik może podać dodatkowe informacje podczas zgłaszania problemów za pomocą formularza dostępnego w aplikacji. Opcjonalnie może dołączyć zdjęcie do zgłoszenia. Zdjęcia są przechowywane wyłącznie przez czas niezbędny do obsługi zgłoszenia, a następnie usuwane.</p>
 
             <h3>e) Logi błędów i diagnostyka</h3>
-            <p>Aplikacja rejestruje logi błędów i dane o awariach w celu zapewnienia stabilności oraz poprawy działania aplikacji. Dane te są przesyłane i przechowywane na serwerach Microsoft Azure. Logi mogą zawierać identyfikator użytkownika, ale nie zawierają danych wrażliwych.</p>
+            <p>Aplikacja rejestruje logi błędów i dane o awariach w celu zapewnienia stabilności oraz poprawy działania aplikacji. Dane te są przesyłane i przechowywane na serwerach Microsoft Azure oraz w usłudze Sentry (Functional Software, Inc.), przy czym dane w Sentry są przechowywane na terenie Unii Europejskiej (Niemcy). Logi mogą zawierać identyfikator użytkownika, ale nie zawierają danych wrażliwych.</p>
 
             <h3>f) Zakupy w aplikacji</h3>
             <p>Aplikacja oferuje subskrypcję premium dostępną do zakupu przez Google Play i App Store. Zakupy są obsługiwane przez odpowiedni sklep (Google LLC lub Apple Inc.) oraz RevenueCat Inc., który przetwarza dane o statusie subskrypcji. Aplikacja otrzymuje informacje o aktywnych uprawnieniach i dacie wygaśnięcia subskrypcji. Dane płatnicze (numery kart itp.) są przetwarzane wyłącznie przez Google lub Apple i nie są dostępne dla administratora aplikacji.</p>
+
+            <h3>g) Pomiar skuteczności reklam (Meta)</h3>
+            <p>Aplikacja korzysta z Facebook SDK dostarczanego przez Meta Platforms Ireland Ltd. Przekazujemy do Meta identyfikator reklamowy urządzenia (IDFA na iOS, Google Advertising ID na Androidzie) oraz zdarzenia wymienione w punkcie 2 (uruchomienie aplikacji, rejestracja konta, rozpoczęcie okresu próbnego, zakup subskrypcji). Dane te służą do mierzenia skuteczności kampanii reklamowych BakeBuddy w serwisach Facebook i Instagram oraz do wyświetlania spersonalizowanych reklam. Nie przekazujemy do Meta Twojego adresu e-mail, imienia ani identyfikatora konta.</p>
+            <p><strong>iOS:</strong> dane są przekazywane do Meta wyłącznie po wyrażeniu zgody w systemowym oknie „Zezwól na śledzenie”. Zgodę można w każdej chwili wycofać w Ustawienia → Prywatność i ochrona → Śledzenie.</p>
+            <p><strong>Android:</strong> w każdej chwili możesz usunąć lub zresetować identyfikator reklamowy w Ustawienia → Google → Reklamy (lub Ustawienia → Prywatność → Reklamy, w zależności od urządzenia). Możesz również wnieść sprzeciw wobec tego przetwarzania, kontaktując się z nami pod adresem <a href="mailto:service.bakebuddy@gmail.com">service.bakebuddy@gmail.com</a>.</p>
+            <p>Więcej informacji o przetwarzaniu danych przez Meta: <a href="https://www.facebook.com/privacy/policy" target="_blank">Polityka Prywatności Meta</a></p>
         </div>
 
         <div class="card">
@@ -271,8 +279,9 @@
                 <li>obsługa zgłoszeń pomocy technicznej i komunikacja z użytkownikiem – wykonanie umowy (art. 6 ust. 1 lit. b RODO)</li>
                 <li>bezpieczeństwo aplikacji, utrzymanie i doskonalenie systemu, przetwarzanie logów błędów – prawnie uzasadnione interesy administratora (art. 6 ust. 1 lit. f RODO)</li>
                 <li>przetwarzanie zakupów w aplikacji i zarządzanie statusem subskrypcji – wykonanie umowy (art. 6 ust. 1 lit. b RODO)</li>
+                <li>pomiar skuteczności kampanii reklamowych i reklamy spersonalizowane (Meta) – na iOS: zgoda użytkownika (art. 6 ust. 1 lit. a RODO); na Androidzie: prawnie uzasadniony interes administratora polegający na promocji aplikacji i ocenie skuteczności działań marketingowych (art. 6 ust. 1 lit. f RODO), z prawem do wniesienia sprzeciwu (art. 21 RODO)</li>
             </ul>
-            <p>Dane użytkownika nie są wykorzystywane do zautomatyzowanego podejmowania decyzji ani profilowania.</p>
+            <p>Dane użytkownika nie są wykorzystywane do zautomatyzowanego podejmowania decyzji wywołujących wobec użytkownika skutki prawne. Meta może wykorzystywać przekazane dane do profilowania w celach reklamowych, zgodnie z własną polityką prywatności.</p>
         </div>
 
         <div class="card">
@@ -292,6 +301,7 @@
                 <li>zdjęcia dołączone do zgłoszeń pomocy technicznej – wyłącznie przez czas niezbędny do obsługi zgłoszenia, następnie usuwane</li>
                 <li>dane diagnostyczne (logi błędów, dane o awariach) – przez okres do 30 dni</li>
                 <li>dane techniczne (logi systemowe, adres IP) – przez okres do 30 dni od usunięcia konta</li>
+                <li>dane przekazane do Meta (identyfikator reklamowy, zdarzenia z aplikacji) – zgodnie z <a href="https://www.facebook.com/privacy/policy" target="_blank">Polityką Prywatności Meta</a></li>
             </ul>
             <p>Po usunięciu konta dane użytkownika są usuwane lub anonimizowane zgodnie z powyższymi zasadami.</p>
         </div>
@@ -308,6 +318,7 @@
         <div class="card">
             <h2>8. Pliki cookie i podobne technologie</h2>
             <p>Aplikacja mobilna nie wykorzystuje plików cookie. Może stosować mechanizmy sesji i tokeny uwierzytelniające w celu utrzymania sesji użytkownika oraz zapewnienia prawidłowego działania funkcji logowania.</p>
+            <p>Aplikacja wykorzystuje identyfikator reklamowy urządzenia do pomiaru skuteczności reklam, zgodnie z opisem w punkcie 3 lit. g.</p>
         </div>
 
         <div class="card">
@@ -318,21 +329,25 @@
                 <li>Microsoft Corporation – w związku z usługami Azure (hosting backendu, przechowywanie danych i logów błędów)</li>
                 <li>Apple Inc. – w związku z Sign in with Apple</li>
                 <li>RevenueCat Inc. – w związku z zarządzaniem subskrypcjami i zakupami</li>
+                <li>Meta Platforms, Inc. – w związku z pomiarem skuteczności reklam (dane są przekazywane do Meta Platforms Ireland Ltd., która może przekazywać je do Meta Platforms, Inc.)</li>
+                <li>Functional Software, Inc. (Sentry) – w związku z raportowaniem błędów i awarii (dane są przechowywane w UE, jednak dostawca ma siedzibę w Stanach Zjednoczonych)</li>
             </ul>
-            <p>Przekazywanie danych odbywa się na podstawie standardowych klauzul umownych zatwierdzonych przez Komisję Europejską.</p>
-            <p>Więcej informacji: <a href="https://policies.google.com/privacy" target="_blank">Polityka Prywatności Google</a> · <a href="https://privacy.microsoft.com" target="_blank">Prywatność Microsoft</a></p>
+            <p>Przekazywanie danych odbywa się na podstawie standardowych klauzul umownych zatwierdzonych przez Komisję Europejską lub ram ochrony danych UE–USA (EU-U.S. Data Privacy Framework).</p>
+            <p>Więcej informacji: <a href="https://policies.google.com/privacy" target="_blank">Polityka Prywatności Google</a> · <a href="https://privacy.microsoft.com" target="_blank">Prywatność Microsoft</a> · <a href="https://www.facebook.com/privacy/policy" target="_blank">Polityka Prywatności Meta</a> · <a href="https://sentry.io/privacy/" target="_blank">Polityka Prywatności Sentry</a></p>
         </div>
 
         <div class="card">
             <h2>10. Udostępnianie danych</h2>
-            <p>Dane są udostępniane podmiotom trzecim wyłącznie w zakresie niezbędnym do funkcjonowania aplikacji:</p>
+            <p>Dane są udostępniane podmiotom trzecim wyłącznie w zakresie opisanym w niniejszej polityce:</p>
             <ul>
                 <li>Google LLC (logowanie i dostarczanie poczty e-mail)</li>
                 <li>Microsoft Corporation (infrastruktura chmurowa Azure – hosting i diagnostyka)</li>
                 <li>Apple Inc. (uwierzytelnianie przez Sign in with Apple)</li>
                 <li>RevenueCat Inc. (zarządzanie statusem subskrypcji)</li>
+                <li>Meta Platforms Ireland Ltd. (pomiar skuteczności reklam – zob. punkt 3 lit. g)</li>
+                <li>Functional Software, Inc. – Sentry (raportowanie błędów i awarii)</li>
             </ul>
-            <p>Dane nie są sprzedawane ani udostępniane w celach marketingowych.</p>
+            <p>Dane nie są sprzedawane. W celach marketingowych dane są udostępniane wyłącznie Meta, w zakresie opisanym w punkcie 3 lit. g.</p>
         </div>
 
         <div class="card">
@@ -346,6 +361,7 @@
                 <div class="right-item"><strong>Art. 20 RODO</strong>przenoszenia danych</div>
                 <div class="right-item"><strong>Art. 21 RODO</strong>sprzeciwu wobec przetwarzania</div>
             </div>
+            <p>Jeżeli przetwarzanie odbywa się na podstawie zgody, użytkownik może ją w każdej chwili wycofać, bez wpływu na zgodność z prawem przetwarzania dokonanego przed jej wycofaniem.</p>
             <p>W celu skorzystania z przysługujących praw prosimy o kontakt z administratorem:</p>
             <div class="contact-box">
                 <a href="mailto:service.bakebuddy@gmail.com">service.bakebuddy@gmail.com</a>
@@ -375,7 +391,7 @@
     </div>
 
     <div class="footer">
-        <p>Ostatnia aktualizacja: 24 czerwca 2026</p>
+        <p>Ostatnia aktualizacja: 27 października 2026</p>
     </div>
 </body>
 </html>
