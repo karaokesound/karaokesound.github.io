@@ -210,7 +210,7 @@
         <span class="emoji">🎂</span>
         <h1>BakeBuddy</h1>
         <p class="subtitle">Privacy Policy</p>
-        <p class="version">Version date: October 27, 2026</p>
+        <p class="version">Version date: November 24, 2026 · applies from app version 2.0.0</p>
         <a href="/" class="back-link">← back to home page</a>
     </div>
 
@@ -233,6 +233,8 @@
                 <li>username</li>
                 <li>user identifier (including Google ID when signing in via Google and Apple ID when signing in via Apple)</li>
                 <li>data shared via Google account (first name, last name, email address)</li>
+                <li>content created by the user in the application (recipes, products, categories, work plans and schedule events)</li>
+                <li>answers to the questions asked when the application is first launched (the type of baker the user is and what the user bakes most often), together with a randomly generated installation identifier and information on whether the questions were skipped</li>
                 <li>photos attached by the user to support requests</li>
                 <li>diagnostic data (error logs, crash data) stored on Microsoft Azure and Sentry servers</li>
                 <li>technical data (IP address, system logs)</li>
@@ -240,7 +242,7 @@
                 <li>device advertising identifier (IDFA on iOS, Google Advertising ID on Android)</li>
                 <li>app usage events (app launch, account registration including the registration method, start of a free trial, subscription purchase including amount and currency)</li>
             </ul>
-            <p>Providing data is voluntary, but necessary to use the application's features.</p>
+            <p>Providing data is voluntary, but necessary to use the application's features. Answering the questions asked at the first launch is not required: the user can skip them.</p>
         </div>
 
         <div class="card">
@@ -262,22 +264,27 @@
             <p>The application records error logs and crash data to ensure stability and improve application performance. This data is transmitted to and stored on Microsoft Azure servers and in Sentry (Functional Software, Inc.), with Sentry data stored in the European Union (Germany). Logs may contain a user identifier but do not contain sensitive data.</p>
 
             <h3>f) In-app purchases</h3>
-            <p>The application offers a premium subscription available for purchase via Google Play and the App Store. Purchases are handled by the respective store (Google LLC or Apple Inc.) and RevenueCat Inc., which processes subscription status data. The application receives information about active entitlements and subscription expiration date. Payment data (card numbers etc.) is processed exclusively by Google or Apple and is not accessible to the application administrator.</p>
+            <p>The application offers a premium subscription, including a free trial period where available, purchasable via Google Play and the App Store. Purchases are handled by the respective store (Google LLC or Apple Inc.) and RevenueCat Inc., which processes subscription status data. The application receives information about active entitlements, the available offers (including the trial length and price) and the subscription expiration date. Payment data (card numbers etc.) is processed exclusively by Google or Apple and is not accessible to the application administrator.</p>
 
             <h3>g) Advertising measurement (Meta)</h3>
             <p>The application uses the Facebook SDK provided by Meta Platforms Ireland Ltd. We share with Meta the device advertising identifier (IDFA on iOS, Google Advertising ID on Android) and the app usage events listed in section 2 (app launch, account registration, start of a free trial, subscription purchase). This data is used to measure the effectiveness of BakeBuddy advertising campaigns on Facebook and Instagram and to display personalized ads. We do not share your email address, name or account identifier with Meta.</p>
             <p><strong>iOS:</strong> data is shared with Meta only after you grant permission in the system "Allow Tracking" prompt. You can withdraw your consent at any time in Settings → Privacy &amp; Security → Tracking.</p>
             <p><strong>Android:</strong> you can delete or reset your advertising identifier at any time in Settings → Google → Ads (or Settings → Privacy → Ads, depending on the device). You may also object to this processing by contacting us at <a href="mailto:service.bakebuddy@gmail.com">service.bakebuddy@gmail.com</a>.</p>
             <p>More information on how Meta processes data: <a href="https://www.facebook.com/privacy/policy" target="_blank">Meta Privacy Policy</a></p>
+
+            <h3>h) Questions at the first launch</h3>
+            <p>When the application is launched for the first time, before logging in or creating an account, we ask two short questions: what type of baker the user is (e.g. home baker or bakery workshop) and what the user bakes most often (e.g. cakes, tray bakes, cookies and cupcakes, other desserts). The user may skip these questions.</p>
+            <p>The answers are sent to our server together with a randomly generated installation identifier, which is created by the application and is not a device identifier, an advertising identifier or an account identifier. Until the user logs in, the answers are not linked to any account. After the user first logs in or registers on a given device, the answers are linked to the user's account. The answers are used only for statistics and to better tailor the application to its users. They are not shared with Meta or other third parties.</p>
         </div>
 
         <div class="card">
             <h2>4. Purpose and Legal Basis for Processing</h2>
             <ul>
                 <li>enabling user registration and login – performance of a contract (Art. 6(1)(b) GDPR)</li>
-                <li>managing user account – performance of a contract (Art. 6(1)(b) GDPR)</li>
+                <li>managing user account and storing the content created by the user – performance of a contract (Art. 6(1)(b) GDPR)</li>
                 <li>handling support requests and communicating with the user – performance of a contract (Art. 6(1)(b) GDPR)</li>
                 <li>application security, system maintenance and improvement, error log processing – legitimate interests of the administrator (Art. 6(1)(f) GDPR)</li>
+                <li>statistics on the users of the application and tailoring it to their needs, based on the answers to the questions asked at the first launch – legitimate interests of the administrator (Art. 6(1)(f) GDPR), with the right to object (Art. 21 GDPR); giving the answers is voluntary</li>
                 <li>processing in-app purchases and managing subscription status – performance of a contract (Art. 6(1)(b) GDPR)</li>
                 <li>measuring the effectiveness of advertising campaigns and personalized ads (Meta) – on iOS: the user's consent (Art. 6(1)(a) GDPR); on Android: legitimate interests of the administrator consisting in promoting the application and evaluating the effectiveness of marketing activities (Art. 6(1)(f) GDPR), with the right to object (Art. 21 GDPR)</li>
             </ul>
@@ -297,7 +304,8 @@
         <div class="card">
             <h2>6. Data Retention</h2>
             <ul>
-                <li>account data (email, username, identifier) – for the duration of the user's account</li>
+                <li>account data (email, username, identifier) and content created by the user – for the duration of the user's account</li>
+                <li>answers to the questions asked at the first launch – for as long as they are needed for statistics; when the account is deleted, the link between the answers and the account is removed, and the answers remain only in anonymous form (together with a random installation identifier that is not linked to any person)</li>
                 <li>photos attached to support requests – only for the time needed to handle the request, then deleted</li>
                 <li>diagnostic data (error logs, crash data) – for up to 30 days</li>
                 <li>technical data (system logs, IP address) – for up to 30 days after account deletion</li>
@@ -312,13 +320,14 @@
                 <li>password encryption (hashing)</li>
                 <li>server and communication security (HTTPS/TLS)</li>
                 <li>token-based authorization mechanisms (valid for a specified period)</li>
+                <li>sensitive data on the device (such as the login session) stored in the system's secure storage (Keychain on iOS, Keystore on Android)</li>
             </ul>
         </div>
 
         <div class="card">
             <h2>8. Cookies and Similar Technologies</h2>
             <p>The mobile application does not use cookies. It may use session mechanisms and authentication tokens to maintain the user session and ensure proper login functionality.</p>
-            <p>The application uses the device advertising identifier for advertising measurement, as described in section 3(g).</p>
+            <p>The application uses the device advertising identifier for advertising measurement, as described in section 3(g), and a randomly generated installation identifier for the statistics described in section 3(h).</p>
         </div>
 
         <div class="card">
@@ -371,7 +380,7 @@
 
         <div class="card">
             <h2>12. Account Deletion</h2>
-            <p>The user may delete their account at any time directly from within the application (in account settings). Deleting the account results in permanent deletion of personal data in accordance with the rules described in section 6.</p>
+            <p>The user may delete their account at any time directly from within the application (in account settings). Deleting the account results in permanent deletion of personal data in accordance with the rules described in section 6. The answers to the questions asked at the first launch are not deleted but anonymized, as described in section 6.</p>
             <p>If you experience any difficulties, please contact the administrator: <a href="mailto:service.bakebuddy@gmail.com">service.bakebuddy@gmail.com</a></p>
         </div>
 
@@ -391,7 +400,7 @@
     </div>
 
     <div class="footer">
-        <p>Last updated: October 27, 2026</p>
+        <p>Last updated: November 24, 2026</p>
     </div>
 </body>
 </html>
